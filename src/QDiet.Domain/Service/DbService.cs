@@ -2,7 +2,6 @@
 using QDiet.Domain.DataBase;
 using QDiet.Domain.Models.Auth;
 using QDiet.Domain.Models.DataBase;
-using QDiet.Domain.Properties;
 using System;
 using System.Collections.Generic;
 using System.Linq;

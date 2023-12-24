@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Проекты\\QDiet.Api\\QDiet.Domain\\QDiet.Domain.csproj": {}
+    "E:\\Проекты\\QDiet.Api\\src\\QDiet.Domain\\QDiet.Domain.csproj": {}
   },
   "projects": {
-    "E:\\Проекты\\QDiet.Api\\QDiet.Domain\\QDiet.Domain.csproj": {
+    "E:\\Проекты\\QDiet.Api\\src\\QDiet.Domain\\QDiet.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Проекты\\QDiet.Api\\QDiet.Domain\\QDiet.Domain.csproj",
+        "projectUniqueName": "E:\\Проекты\\QDiet.Api\\src\\QDiet.Domain\\QDiet.Domain.csproj",
         "projectName": "QDiet.Domain",
-        "projectPath": "E:\\Проекты\\QDiet.Api\\QDiet.Domain\\QDiet.Domain.csproj",
+        "projectPath": "E:\\Проекты\\QDiet.Api\\src\\QDiet.Domain\\QDiet.Domain.csproj",
         "packagesPath": "C:\\Users\\danik\\.nuget\\packages\\",
-        "outputPath": "E:\\Проекты\\QDiet.Api\\QDiet.Domain\\obj\\",
+        "outputPath": "E:\\Проекты\\QDiet.Api\\src\\QDiet.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

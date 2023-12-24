@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "QDiet.Api.Controllers.AuthAPIController",
+    "ContainingType": "QDiet.Api.Controllers.AuthController",
     "Method": "Authenticate",
-    "RelativePath": "api/AuthAPI/Authenticate",
+    "RelativePath": "api/Auth/Authenticate",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -16,25 +16,25 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QDiet.Api.Controllers.AuthAPIController",
+    "ContainingType": "QDiet.Api.Controllers.AuthController",
     "Method": "RefreshToken",
-    "RelativePath": "api/AuthAPI/RefreshToken",
+    "RelativePath": "api/Auth/RefreshToken",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "tokenModel",
-        "Type": "QDiet.Domain.Models.Auth.TokenModel",
-        "IsRequired": true
+        "Name": "refreshToken",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QDiet.Api.Controllers.AuthAPIController",
+    "ContainingType": "QDiet.Api.Controllers.AuthController",
     "Method": "Register",
-    "RelativePath": "api/AuthAPI/Register",
+    "RelativePath": "api/Auth/Register",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -48,13 +48,51 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QDiet.Api.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "api/WeatherForecast",
-    "HttpMethod": "GET",
+    "ContainingType": "QDiet.Api.Controllers.TestController",
+    "Method": "ModForAdmin",
+    "RelativePath": "api/Test/ModForAdmin",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "template",
+        "Type": "QDiet.Api.Controllers.TestController\u002BMathTemplate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QDiet.Api.Controllers.TestController",
+    "Method": "MultiplyWithAuthorization",
+    "RelativePath": "api/Test/MultiplyWithAuthorization",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "template",
+        "Type": "QDiet.Api.Controllers.TestController\u002BMathTemplate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QDiet.Api.Controllers.TestController",
+    "Method": "SummWithoutAuthorize",
+    "RelativePath": "api/Test/SummWithoutAuthorize",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "template",
+        "Type": "QDiet.Api.Controllers.TestController\u002BMathTemplate",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   }
 ]
