@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 using Microsoft.IdentityModel.Tokens;
 using QDiet.Api.Properties;
@@ -15,7 +14,7 @@ namespace QDiet.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AuthController : ControllerBase
+    public class AuthAPIController : ControllerBase
     {
         [HttpPost("Authenticate")]
         public async Task<IActionResult> Authenticate([FromBody] AuthModel authModel)
@@ -69,25 +68,31 @@ namespace QDiet.Api.Controllers
             return Created();
         }
 
-        [Authorize]
         [HttpPost("RefreshToken")]
-        public async Task<IActionResult> RefreshToken(string refreshToken)
+        public async Task<IActionResult> RefreshToken([FromBody] TokenModel tokenModel)
         {
-            if (string.IsNullOrEmpty(refreshToken))
+            if (tokenModel == null)
             {
                 return BadRequest(new { Comment = "Неизвестный запрос от клиента." });
             }
 
-            User? user = await DbService.GetUserAsync(User.Claims.First(c => c.Type == "Id").Value);
+            ClaimsIdentity? identity = await GetIdentityFromExpiredToken(tokenModel.AccessToken);
 
-            if (user == null ||
-                !user.RefreshToken.Equals(refreshToken) ||
-                user.RefreshTokenExpireTime <= DateTime.Now)
+            if (identity == null)
             {
-                return BadRequest(new { Comment = "Неверный refresh токен." });
+                return BadRequest(new { Comment = "Неверный токен или refresh токен." });
             }
 
-            SecurityToken? newAccessToken = CreateToken(User.Claims);
+            User? user = await DbService.GetUserAsync(identity.Name);
+
+            if (user == null ||
+                !user.RefreshToken.Equals(tokenModel.RefreshToken) ||
+                user.RefreshTokenExpireTime <= DateTime.Now)
+            {
+                return BadRequest(new { Comment = "Неверный токен или refresh токен." });
+            }
+
+            SecurityToken? newAccessToken = CreateToken(identity.Claims);
             string? newRefreshToken = GenerateRefreshToken();
 
             await DbService.UpdateUserRefreshTokenAsync(user, newRefreshToken, DateTime.UtcNow.AddDays(7));

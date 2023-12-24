@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{2DA849C7-A4D9-4945-9566-09F8E18D84E3}|QDiet.Api\\QDiet.Api.csproj|solutionrelative:qdiet.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2DA849C7-A4D9-4945-9566-09F8E18D84E3}|QDiet.Api\\QDiet.Api.csproj|e:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\qdiet.api\\src\\qdiet.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DA849C7-A4D9-4945-9566-09F8E18D84E3}|QDiet.Api\\QDiet.Api.csproj|solutionrelative:qdiet.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{46C02817-3E56-4394-9CB7-B0D02CEEC2CC}|QDiet.Domain\\QDiet.Domain.csproj|e:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\qdiet.api\\src\\qdiet.domain\\models\\auth\\tokenmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46C02817-3E56-4394-9CB7-B0D02CEEC2CC}|QDiet.Domain\\QDiet.Domain.csproj|solutionrelative:qdiet.domain\\models\\auth\\tokenmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -29,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2DA849C7-A4D9-4945-9566-09F8E18D84E3}|QDiet.Api\\QDiet.Api.csproj|e:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\qdiet.api\\src\\qdiet.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{2DA849C7-A4D9-4945-9566-09F8E18D84E3}|QDiet.Api\\QDiet.Api.csproj|solutionrelative:qdiet.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DA849C7-A4D9-4945-9566-09F8E18D84E3}|QDiet.Api\\QDiet.Api.csproj|e:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\qdiet.api\\src\\qdiet.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DA849C7-A4D9-4945-9566-09F8E18D84E3}|QDiet.Api\\QDiet.Api.csproj|solutionrelative:qdiet.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{46C02817-3E56-4394-9CB7-B0D02CEEC2CC}|QDiet.Domain\\QDiet.Domain.csproj|e:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\qdiet.api\\src\\qdiet.domain\\models\\database\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -90,15 +90,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
@@ -108,14 +104,14 @@
               "RelativeDocumentMoniker": "QDiet.Api\\Controllers\\TestController.cs",
               "ToolTip": "E:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\QDiet.Api\\src\\QDiet.Api\\Controllers\\TestController.cs",
               "RelativeToolTip": "QDiet.Api\\Controllers\\TestController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAvAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2023-12-24T13:54:05.533Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "RegisterModel.cs",
               "DocumentMoniker": "E:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\QDiet.Api\\src\\QDiet.Domain\\Models\\Auth\\RegisterModel.cs",
               "RelativeDocumentMoniker": "QDiet.Domain\\Models\\Auth\\RegisterModel.cs",
@@ -127,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TokenModel.cs",
               "DocumentMoniker": "E:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\QDiet.Api\\src\\QDiet.Domain\\Models\\Auth\\TokenModel.cs",
               "RelativeDocumentMoniker": "QDiet.Domain\\Models\\Auth\\TokenModel.cs",
@@ -145,14 +141,14 @@
               "RelativeDocumentMoniker": "QDiet.Api\\Controllers\\AuthController.cs",
               "ToolTip": "E:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\QDiet.Api\\src\\QDiet.Api\\Controllers\\AuthController.cs",
               "RelativeToolTip": "QDiet.Api\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAATAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAHwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2023-12-23T07:39:04.366Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\QDiet.Api\\src\\QDiet.Api\\Program.cs",
               "RelativeDocumentMoniker": "QDiet.Api\\Program.cs",
@@ -160,7 +156,8 @@
               "RelativeToolTip": "QDiet.Api\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-12-23T07:24:11.466Z"
+              "WhenOpened": "2023-12-23T07:24:11.466Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -175,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "DbService.cs",
               "DocumentMoniker": "E:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\QDiet.Api\\src\\QDiet.Domain\\Service\\DbService.cs",
               "RelativeDocumentMoniker": "QDiet.Domain\\Service\\DbService.cs",
@@ -199,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "launchSettings.json",
               "DocumentMoniker": "E:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\QDiet.Api\\src\\QDiet.Api\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "QDiet.Api\\Properties\\launchSettings.json",
@@ -317,8 +314,12 @@
               "WhenOpened": "2023-12-23T18:31:10.222Z"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Resources.resx",
               "DocumentMoniker": "E:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\QDiet.Api\\src\\QDiet.Api\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "QDiet.Api\\Properties\\Resources.resx",
