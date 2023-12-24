@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "rR8z53oGx3IhuV89180/jqqebnJt1t7iquKuZ9SdmRz4jORxpCp9Pmzpc//dA8kbNpp5GsqrtjkPXe89f1Bsvw==",
+  "dgSpecHash": "L72RX+YVNk9MgaaPuX17LGIVwj/0OWELdH10XwQKhDiTiDHbLrvPJdO06Yzf/8Kxz1TCf12x8IuvIVraMyB+6Q==",
   "success": true,
   "projectFilePath": "E:\\Проекты\\QDiet.Api\\src\\QDiet.Console\\QDiet.Console.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\danik\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
     "C:\\Users\\danik\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.0\\microsoft.entityframeworkcore.8.0.0.nupkg.sha512",
     "C:\\Users\\danik\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.0\\microsoft.entityframeworkcore.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\danik\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.0\\microsoft.entityframeworkcore.analyzers.8.0.0.nupkg.sha512",

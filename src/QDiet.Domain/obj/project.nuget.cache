@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Int9Sb3uZCnFYMWBJCFDY3eRAXsiVxHrt9YRuyWkJXzvkDG/2L0dk2LZeP1fMI5ZAZh15m/65SA/VZgMcI4dfA==",
+  "dgSpecHash": "ViiTy+TdlEKbris1+a+WSeo284N0MHKNYj3uJ7f4HFOmrmTc0y6O3xC6U8ElL8c+RpCyj9PJAuS3ZkaRy78kOQ==",
   "success": true,
   "projectFilePath": "E:\\Проекты\\QDiet.Api\\src\\QDiet.Domain\\QDiet.Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\danik\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
     "C:\\Users\\danik\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\danik\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\danik\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",

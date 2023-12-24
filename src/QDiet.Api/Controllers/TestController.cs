@@ -3,15 +3,15 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace QDiet.Api.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class TestController : ControllerBase
+    public class TestController : AbstractController
     {
         public class MathTemplate
         {
             public int FirstNumber { get; set; }
             public int SecondNumber { get; set; }
         }
+
+        public TestController(ILogger logger) : base(logger) { }
 
         [HttpPost("SummWithoutAuthorize")]
         public IActionResult SummWithoutAuthorize([FromBody] MathTemplate template)

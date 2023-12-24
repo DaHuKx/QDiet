@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QDiet.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd1f9bcb94fb41fb5780338c3a68bc8eea443756")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1332e3bfd20e34922152fd7d445ceb3d8954995")]
 [assembly: System.Reflection.AssemblyProductAttribute("QDiet.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QDiet.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
