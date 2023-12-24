@@ -1,0 +1,60 @@
+[
+  {
+    "ContainingType": "QDiet.Api.Controllers.AuthAPIController",
+    "Method": "Authenticate",
+    "RelativePath": "api/AuthAPI/Authenticate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authModel",
+        "Type": "QDiet.Domain.Models.Auth.AuthModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QDiet.Api.Controllers.AuthAPIController",
+    "Method": "RefreshToken",
+    "RelativePath": "api/AuthAPI/RefreshToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tokenModel",
+        "Type": "QDiet.Domain.Models.Auth.TokenModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QDiet.Api.Controllers.AuthAPIController",
+    "Method": "Register",
+    "RelativePath": "api/AuthAPI/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "regModel",
+        "Type": "QDiet.Domain.Models.Auth.RegisterModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QDiet.Api.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "api/WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\QDiet.Api.props" />
+</Project>

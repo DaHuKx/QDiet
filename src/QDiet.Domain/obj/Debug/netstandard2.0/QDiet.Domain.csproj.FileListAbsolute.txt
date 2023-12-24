@@ -1,0 +1,10 @@
+E:\Проекты\QDiet.Api\QDiet.Domain\bin\Debug\netstandard2.0\QDiet.Domain.deps.json
+E:\Проекты\QDiet.Api\QDiet.Domain\bin\Debug\netstandard2.0\QDiet.Domain.dll
+E:\Проекты\QDiet.Api\QDiet.Domain\bin\Debug\netstandard2.0\QDiet.Domain.pdb
+E:\Проекты\QDiet.Api\QDiet.Domain\obj\Debug\netstandard2.0\QDiet.Domain.csproj.AssemblyReference.cache
+E:\Проекты\QDiet.Api\QDiet.Domain\obj\Debug\netstandard2.0\QDiet.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Проекты\QDiet.Api\QDiet.Domain\obj\Debug\netstandard2.0\QDiet.Domain.AssemblyInfoInputs.cache
+E:\Проекты\QDiet.Api\QDiet.Domain\obj\Debug\netstandard2.0\QDiet.Domain.AssemblyInfo.cs
+E:\Проекты\QDiet.Api\QDiet.Domain\obj\Debug\netstandard2.0\QDiet.Domain.csproj.CoreCompileInputs.cache
+E:\Проекты\QDiet.Api\QDiet.Domain\obj\Debug\netstandard2.0\QDiet.Domain.dll
+E:\Проекты\QDiet.Api\QDiet.Domain\obj\Debug\netstandard2.0\QDiet.Domain.pdb
