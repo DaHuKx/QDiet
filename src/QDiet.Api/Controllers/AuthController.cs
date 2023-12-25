@@ -1,21 +1,24 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using FluentValidation.Results;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 using Microsoft.IdentityModel.Tokens;
 using QDiet.Api.Properties;
+using QDiet.Domain.Logging;
 using QDiet.Domain.Models.Auth;
 using QDiet.Domain.Models.DataBase;
 using QDiet.Domain.Service;
+using QDiet.Domain.Validators;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
+using ValidationFailure = FluentValidation.Results.ValidationFailure;
 
 namespace QDiet.Api.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class AuthAPIController : ControllerBase
+    public class AuthController : AbstractController
     {
+
         [HttpPost("Authenticate")]
         public async Task<IActionResult> Authenticate([FromBody] AuthModel authModel)
         {
@@ -53,6 +56,23 @@ namespace QDiet.Api.Controllers
         [HttpPost("Register")]
         public async Task<IActionResult> Register([FromBody] RegisterModel regModel)
         {
+            RegisterValidator validations = new RegisterValidator();
+            ValidationResult result = validations.Validate(regModel);
+
+            if (!result.IsValid)
+            {
+                StringBuilder problem = new StringBuilder();
+
+                problem.AppendLine("Ошибка валидации:");
+
+                foreach (ValidationFailure error in result.Errors)
+                {
+                    problem.AppendLine(error.ErrorMessage);
+                }
+
+                return BadRequest(new { Comment = problem });
+            }
+
             if (await DbService.UserNameExistAsync(regModel.UserName))
             {
                 return BadRequest(new { Comment = "Пользователь с данным логином уже существует." });

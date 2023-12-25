@@ -1,11 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using QDiet.Domain.Logging;
 
 namespace QDiet.Api.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class TestController : ControllerBase
+    public class TestController : AbstractController
     {
         public class MathTemplate
         {
@@ -16,6 +15,8 @@ namespace QDiet.Api.Controllers
         [HttpPost("SummWithoutAuthorize")]
         public IActionResult SummWithoutAuthorize([FromBody] MathTemplate template)
         {
+            
+
             return Ok($"Answer is: {template.FirstNumber + template.SecondNumber}");
         }
 

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "rR8z53oGx3IhuV89180/jqqebnJt1t7iquKuZ9SdmRz4jORxpCp9Pmzpc//dA8kbNpp5GsqrtjkPXe89f1Bsvw==",
+  "dgSpecHash": "Flfcyi/RbFjZZrXwjehsVZpgdxjoIDPqgLpNJmZ9OpfnK6fPO6gVStr/CkaXuUnvFYprY3jddj2fg9fDdInBjg==",
   "success": true,
   "projectFilePath": "E:\\Проекты\\QDiet.Api\\src\\QDiet.Console\\QDiet.Console.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\danik\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
     "C:\\Users\\danik\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.0\\microsoft.entityframeworkcore.8.0.0.nupkg.sha512",
     "C:\\Users\\danik\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.0\\microsoft.entityframeworkcore.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\danik\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.0\\microsoft.entityframeworkcore.analyzers.8.0.0.nupkg.sha512",
@@ -17,6 +18,7 @@
     "C:\\Users\\danik\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\danik\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
     "C:\\Users\\danik\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\danik\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\danik\\.nuget\\packages\\npgsql\\8.0.0\\npgsql.8.0.0.nupkg.sha512",
     "C:\\Users\\danik\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.0\\npgsql.entityframeworkcore.postgresql.8.0.0.nupkg.sha512"
   ],
