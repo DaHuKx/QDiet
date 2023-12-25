@@ -17,7 +17,7 @@ logsStr = logsStr.Remove(logsStr.Length - 1, 1);
 logsStr.Append("\n]");
 
 var logs = JsonConvert.DeserializeObject<List<LogModel>>(logsStr.ToString());
-
+    
 foreach (var log in logs)
 {
     Console.WriteLine($"{log.LogTime:g}\n" +

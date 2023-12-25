@@ -3,10 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 using Microsoft.IdentityModel.Tokens;
 using QDiet.Api.Properties;
-using QDiet.Domain.Logging;
 using QDiet.Domain.Models.Auth;
 using QDiet.Domain.Models.DataBase;
-using QDiet.Domain.Service;
+using QDiet.Domain.Service.DataBase;
 using QDiet.Domain.Validators;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -22,7 +21,7 @@ namespace QDiet.Api.Controllers
         [HttpPost("Authenticate")]
         public async Task<IActionResult> Authenticate([FromBody] AuthModel authModel)
         {
-            User user = await DbService.GetUserAsync(authModel);
+            User user = await DbUserService.GetUserAsync(authModel);
 
             if (user == null)
             {
@@ -43,7 +42,7 @@ namespace QDiet.Api.Controllers
             SecurityToken? token = CreateToken(authClaims);
             string? refreshToken = GenerateRefreshToken();
 
-            await DbService.UpdateUserRefreshTokenAsync(user, refreshToken, DateTime.UtcNow.AddDays(7));
+            await DbUserService.UpdateUserRefreshTokenAsync(user, refreshToken, DateTime.UtcNow.AddDays(7));
 
             return Ok(new
             {
@@ -73,12 +72,12 @@ namespace QDiet.Api.Controllers
                 return BadRequest(new { Comment = problem });
             }
 
-            if (await DbService.UserNameExistAsync(regModel.UserName))
+            if (await DbUserService.UserNameExistAsync(regModel.UserName))
             {
                 return BadRequest(new { Comment = "Пользователь с данным логином уже существует." });
             }
 
-            User? user = await DbService.AddUserAsync(regModel);
+            User? user = await DbUserService.AddUserAsync(regModel);
 
             if (user == null)
             {
@@ -103,11 +102,11 @@ namespace QDiet.Api.Controllers
                 return BadRequest(new { Comment = "Неверный токен или refresh токен." });
             }
 
-            User? user = await DbService.GetUserAsync(identity.Name);
+            User? user = await DbUserService.GetUserAsync(identity.Name);
 
             if (user == null ||
                 !user.RefreshToken.Equals(tokenModel.RefreshToken) ||
-                user.RefreshTokenExpireTime <= DateTime.Now)
+                user.RefreshTokenExpireEndDate <= DateTime.Now)
             {
                 return BadRequest(new { Comment = "Неверный токен или refresh токен." });
             }
@@ -115,7 +114,7 @@ namespace QDiet.Api.Controllers
             SecurityToken? newAccessToken = CreateToken(identity.Claims);
             string? newRefreshToken = GenerateRefreshToken();
 
-            await DbService.UpdateUserRefreshTokenAsync(user, newRefreshToken, DateTime.UtcNow.AddDays(7));
+            await DbUserService.UpdateUserRefreshTokenAsync(user, newRefreshToken, DateTime.UtcNow.AddDays(7));
 
             return Ok(new
             {

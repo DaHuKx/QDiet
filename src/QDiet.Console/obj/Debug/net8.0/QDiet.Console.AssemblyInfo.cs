@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QDiet.Console")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+043e670cc01a450b08479b425256e1a5412b94ee")]
 [assembly: System.Reflection.AssemblyProductAttribute("QDiet.Console")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QDiet.Console")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

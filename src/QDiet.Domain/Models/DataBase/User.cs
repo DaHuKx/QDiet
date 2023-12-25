@@ -37,11 +37,26 @@ namespace QDiet.Domain.Models.DataBase
         /// <summary>
         /// Дата окончания актуальности Refresh токена
         /// </summary>
-        public DateTime RefreshTokenExpireTime { get; set; }
+        public DateTime RefreshTokenExpireEndDate { get; set; }
+
+        /// <summary>
+        /// Дата последней активности
+        /// </summary>
+        public DateTime LastActivityAt { get; set; }
 
         /// <summary>
         /// Роли пользователя
         /// </summary>
         public List<Role> Roles { get; set; }
+
+        /// <summary>
+        /// Блог пользователя
+        /// </summary>
+        public Blog Blog { get; set; }
+
+        /// <summary>
+        /// Блоги, на которые пользователь подписан
+        /// </summary>
+        public List<Blog> Blogs { get; set; }
     }
 }

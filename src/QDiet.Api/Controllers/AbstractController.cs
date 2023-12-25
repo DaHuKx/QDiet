@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging.Configuration;
-using QDiet.Domain.Logging;
 using QDiet.Domain.Models.DataBase;
-using QDiet.Domain.Service;
+using QDiet.Domain.Service.DataBase;
 
 namespace QDiet.Api.Controllers
 {
@@ -12,7 +11,7 @@ namespace QDiet.Api.Controllers
     {
         protected async Task<User> GetUser()
         {
-            return await DbService.GetUserAsync(long.Parse(User.Claims.First(claim => claim.Type.Equals("Id")).Value));
+            return await DbUserService.GetUserAsync(long.Parse(User.Claims.First(claim => claim.Type.Equals("Id")).Value));
         }
     }
 }

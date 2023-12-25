@@ -1,5 +1,5 @@
 ﻿using QDiet.Domain.Models.DataBase;
-using QDiet.Domain.Service;
+using QDiet.Domain.Service.DataBase;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +18,7 @@ namespace QDiet.Tests
         [DataRow(5, null)]
         public async Task GetUserTests(long id, string expectedUserName)
         {
-            User? user = await DbService.GetUserAsync(id);
+            User? user = await DbUserService.GetUserAsync(id);
 
             Assert.AreEqual(user?.Username, expectedUserName);
         }
@@ -30,7 +30,7 @@ namespace QDiet.Tests
         [DataRow("ddd", false)]
         public async Task UserNameExist_Test(string userName, bool expectedResult)
         {
-            bool result = await DbService.UserNameExistAsync(userName);
+            bool result = await DbUserService.UserNameExistAsync(userName);
 
             Assert.AreEqual(result, expectedResult);
         }

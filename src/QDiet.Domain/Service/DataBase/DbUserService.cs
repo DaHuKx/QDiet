@@ -9,12 +9,12 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QDiet.Domain.Service
+namespace QDiet.Domain.Service.DataBase
 {
     /// <summary>
     /// Сервис базы данных
     /// </summary>
-    public static class DbService
+    public static class DbUserService
     {
         /// <summary>
         /// Получение пользователя по логину и паролю
@@ -93,7 +93,6 @@ namespace QDiet.Domain.Service
             }
         }
 
-
         /// <summary>
         /// Проверка, существует ли логин в базе данных
         /// </summary>
@@ -123,8 +122,8 @@ namespace QDiet.Domain.Service
                 User dbUser = db.Users.First(u => u.Id == user.Id);
 
                 dbUser.RefreshToken = refreshToken;
-                dbUser.RefreshTokenExpireTime = expireDate.ToUniversalTime();
-                
+                dbUser.RefreshTokenExpireEndDate = expireDate.ToUniversalTime();
+
                 await db.SaveChangesAsync();
             }
 
