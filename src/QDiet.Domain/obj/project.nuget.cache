@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ViiTy+TdlEKbris1+a+WSeo284N0MHKNYj3uJ7f4HFOmrmTc0y6O3xC6U8ElL8c+RpCyj9PJAuS3ZkaRy78kOQ==",
+  "dgSpecHash": "MeBDnl6tjFubxcvkG2gRyLRiRgItp/IcuyF49g0+huHSQsJIAedcsl2d0GAN65lOH4K1Bqtn0W5sdGG7sgj70A==",
   "success": true,
   "projectFilePath": "E:\\Проекты\\QDiet.Api\\src\\QDiet.Domain\\QDiet.Domain.csproj",
   "expectedPackageFiles": [
@@ -29,6 +29,7 @@
     "C:\\Users\\danik\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
     "C:\\Users\\danik\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\danik\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\danik\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\danik\\.nuget\\packages\\npgsql\\8.0.0\\npgsql.8.0.0.nupkg.sha512",
     "C:\\Users\\danik\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.0\\npgsql.entityframeworkcore.postgresql.8.0.0.nupkg.sha512",
     "C:\\Users\\danik\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",

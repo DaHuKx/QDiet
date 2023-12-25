@@ -2,12 +2,13 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using QDiet.Api.Controllers;
 using QDiet.Api.Properties;
+using QDiet.Domain.Logging;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddSingleton<ILogger, Logger<AbstractController>>();
+builder.Services.AddSingleton<ILog, FileLogger>();
 
 builder.Services.AddAuthorization();
 builder.Services.AddAuthentication(x =>

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 using Microsoft.IdentityModel.Tokens;
 using QDiet.Api.Properties;
+using QDiet.Domain.Logging;
 using QDiet.Domain.Models.Auth;
 using QDiet.Domain.Models.DataBase;
 using QDiet.Domain.Service;
@@ -17,7 +18,6 @@ namespace QDiet.Api.Controllers
 {
     public class AuthController : AbstractController
     {
-        public AuthController(ILogger logger) : base(logger) { }
 
         [HttpPost("Authenticate")]
         public async Task<IActionResult> Authenticate([FromBody] AuthModel authModel)

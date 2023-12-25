@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QDiet.Api", "QDiet.Api\QDie
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QDiet.Domain", "QDiet.Domain\QDiet.Domain.csproj", "{46C02817-3E56-4394-9CB7-B0D02CEEC2CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QDiet.Console", "QDiet.Console\QDiet.Console.csproj", "{D14483D0-85C2-4D31-AA52-96297768C4CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QDiet.Console", "QDiet.Console\QDiet.Console.csproj", "{D14483D0-85C2-4D31-AA52-96297768C4CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QDiet.Tests", "QDiet.Tests\QDiet.Tests.csproj", "{4013A619-FB34-4175-915E-9732F77D0E51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{D14483D0-85C2-4D31-AA52-96297768C4CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D14483D0-85C2-4D31-AA52-96297768C4CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D14483D0-85C2-4D31-AA52-96297768C4CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4013A619-FB34-4175-915E-9732F77D0E51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4013A619-FB34-4175-915E-9732F77D0E51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4013A619-FB34-4175-915E-9732F77D0E51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4013A619-FB34-4175-915E-9732F77D0E51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

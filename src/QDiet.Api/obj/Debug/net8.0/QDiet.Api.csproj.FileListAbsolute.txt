@@ -232,3 +232,4 @@ E:\Проекты\QDiet.Api\src\QDiet.Api\obj\Debug\net8.0\QDiet.Api.pdb
 E:\Проекты\QDiet.Api\src\QDiet.Api\obj\Debug\net8.0\QDiet.Api.genruntimeconfig.cache
 E:\Проекты\QDiet.Api\src\QDiet.Api\obj\Debug\net8.0\ref\QDiet.Api.dll
 E:\Проекты\QDiet.Api\src\QDiet.Api\bin\Debug\net8.0\FluentValidation.dll
+E:\Проекты\QDiet.Api\src\QDiet.Api\bin\Debug\net8.0\Newtonsoft.Json.dll
